@@ -1,0 +1,26 @@
+#progressbar {
+  background-color: #000000;
+  border-radius: 13px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar > div {
+   background-color: springgreen;
+   width: 100%; /* Adjust with JavaScript */
+   height: 20px;
+   border-radius: 10px;
+}
+
+
+#progressbar2 {
+  background-color: #000000;
+  border-radius: 13px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar2 > div {
+   background-color: dodgerblue;
+   width: 1%; /* Adjust with JavaScript */
+   height: 20px;
+   border-radius: 10px;
+}

@@ -1,0 +1,23 @@
+{% extends "base_template.html" %}
+
+
+{% load staticfiles %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/progress_bars.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/jumbotron.css' %}">
+
+
+<h3>HP</h3>
+<div id="progressbar">
+  <div></div>
+</div>
+        <h6>60/100</h6>
+        <br>
+        <h3>EXP</h3>
+<div id="progressbar2">
+  <div></div>
+</div>
+        <h6>20/100 <br> NEXT: 80</h6>
+
+{% endblock content %}
