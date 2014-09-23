@@ -6,9 +6,10 @@ urlpatterns = patterns('',
     # url(r'^$', 'presentation.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^quests/', 'aerinde.views.quests', name='quests'),
+    url(r'^quests/$', 'aerinde.views.quests', name='quests'),
     url(r'^$', 'aerinde.views.index', name='index'),
 
+    url(r'^profile/$', 'aerinde.views.profile', name='profile'),
     url(r'^setupa/(?P<userid>\d+)/$', 'aerinde.views.setupa', name='setupa'),
     url(r'^setupb/(?P<userid>\d+)/$', 'aerinde.views.setupb', name='setupb'),
 

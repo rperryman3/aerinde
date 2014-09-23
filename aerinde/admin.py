@@ -1,9 +1,6 @@
 from django.contrib import admin
-
-# Register your models here.
-from django.contrib import admin
-
-# Register your models here.
-from aerinde.models import User
+from aerinde.models import User, Task, List
 
 admin.site.register(User)
+admin.site.register(Task)
+admin.site.register(List)

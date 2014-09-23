@@ -1,0 +1,41 @@
+{% extends 'base_template.html' %}
+
+{% block title %}
+    Profile
+{% endblock title %}
+
+{% block content %}
+
+    <body background="http://animediet.net/wp-content/uploads/2011/07/dungeon-3.jpg">
+
+    <div style="margin-left: 40px">
+            <h2> Welcome, Warrior of Aerinde!  </h2>
+
+
+
+<b>
+
+    <p>First Name: {{ user.first_name }}</p>
+    <p>Last Name: {{ user.last_name }} </p>
+    <p>User Name: {{ user.username }}</p>
+    <p>Password: Want to reset your password?  <a href="{% url 'password_reset' %}">Reset your password</a></p>
+    <p>Email: {{ user.email }}</p>
+    <p>Date Joined: {{ user.date_joined }}</p>
+    <p>Last Login: {{ user.last_login}}</p>
+</b>
+
+
+        <div id = "left" style="float:left; margin-left:100px">
+
+
+        <div id ="right" style="float:right; margin-right: 40px">
+
+            <button type="submit" class="btn btn-lg btn-success"> <a href="{% url 'setupa' user.id  %}">Add Tasks!</a> </button>
+        </div>
+
+    </body>
+    </div>
+
+</font>
+
+{% endblock content %}

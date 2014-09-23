@@ -66,7 +66,7 @@ DATABASES = {
 
 LOGIN_REDIRECT_URL = 'profile'
 LOGIN_URL = 'login'
-
+AUTH_USER_MODEL = 'aerinde.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/

@@ -11,30 +11,30 @@
 
     <title>Aerinde</title>
 
-    <!-- Bootstrap core CSS -->
-
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/jumbotron.css' %}">
 
+ <body background="http://www.hereticscribe.com/wp-content/uploads/2012/12/daearinon-02182013.jpg">
+
   </head>
+
+
+
 
         <body>
 
+        <a href ="{%  url 'quests' %}"> Quests </a> | <a href ="{%  url 'profile' %}"> Profile </a> |<a href ="{%  url 'logout' %}"> Logout </a>
 
-            <div>
-
-
-            </div>
 
 
             {% block content %}
 
+
             {% endblock content %}
+
 
         </body>
 
-        <footer>
 
-        </footer>
 
     </html>

@@ -1,14 +1,41 @@
-{% extends "base_template.html" %}
+{% load staticfiles %}
 
-{% block content %}
-    <form method="post" action=".">
-        {% csrf_token %}
-        {{ form.as_p }}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <input type="submit" value="Log in">
-    </form>
+    <title>Aerinde</title>
 
-    <p>Not member? <a href="{% url 'register' %}">Register!</a></p>
-{% endblock %}
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jumbotron.css' %}">
+
+  </head>
 
 
+        <body style ="margin-left:40px">
+
+        <h2>Login</h2>
+
+
+            <form method="post" action=".">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Log in">
+            </form>
+
+        <p>Forgot your password?  <a href="{% url 'password_reset' %}">Reset your password</a></p>
+
+        </body>
+
+        <footer>
+
+        </footer>
+
+    </html>

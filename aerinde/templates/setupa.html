@@ -1,0 +1,31 @@
+{% extends 'base_template.html' %}
+
+{% block title %}
+    Choose your quests!
+{% endblock title %}
+
+{% block content %}
+
+    <body>
+
+            <div style="margin-left:40px"><br><br><br>
+                <h2>First, create a Quest Log. </h2>
+                <div id="travel_list">
+
+                        <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_table }}
+                        <input type="submit" value="Create">
+
+
+                 or <button type="submit" class="btn btn-success" style="margin-top:0px"> <a href="{% url 'setupb' user.id  %}">Skip This Step </a> </button>
+                </form>
+
+                </div>
+            </div>
+
+
+
+    </body>
+
+{% endblock content %}

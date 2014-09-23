@@ -7,17 +7,9 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/progress_bars.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/jumbotron.css' %}">
 
+     <body background="http://animediet.net/wp-content/uploads/2011/07/dungeon-3.jpg">
 
-<h3>HP</h3>
-<div id="progressbar">
-  <div></div>
-</div>
-        <h6>60/100</h6>
-        <br>
-        <h3>EXP</h3>
-<div id="progressbar2">
-  <div></div>
-</div>
-        <h6>20/100 <br> NEXT: 80</h6>
-
+<br><br>
+<h1>{{ hp|length }} HP remaining <br><br> {{ exp|length }} EXP gained <br><br> {{ questlog|length }} Quests remaining</h1>
+</font>
 {% endblock content %}

@@ -1,5 +1,28 @@
-{% extends "base_template.html" %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aerinde</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jumbotron.css' %}">
+
+
+  </head>
 
 {% block content %}
-    <p>Come back soon!</p>
+
+    <div style="margin-left:50px">
+    <h2>You just Logged Out!
+    <button type="submit" class="btn btn-lg btn-success" style="margin-left: 70px"> <a href="{% url 'login' %}">Log Back In</a> </button></h2>
+    </div>
 {% endblock %}
+
+

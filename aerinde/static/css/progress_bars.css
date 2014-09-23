@@ -1,26 +1,15 @@
-#progressbar {
-  background-color: #000000;
-  border-radius: 13px; /* (height of inner div) / 2 + padding */
-  padding: 3px;
+#progressBar {
+        width: 400px;
+        height: 22px;
+        border: 1px solid #111;
+        background-color: #292929;
 }
-
-#progressbar > div {
-   background-color: springgreen;
-   width: 100%; /* Adjust with JavaScript */
-   height: 20px;
-   border-radius: 10px;
-}
-
-
-#progressbar2 {
-  background-color: #000000;
-  border-radius: 13px; /* (height of inner div) / 2 + padding */
-  padding: 3px;
-}
-
-#progressbar2 > div {
-   background-color: dodgerblue;
-   width: 1%; /* Adjust with JavaScript */
-   height: 20px;
-   border-radius: 10px;
+ 
+#progressBar div {
+        height: 100%;
+        color: #fff;
+        text-align: right;
+        line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+        width: 0;
+        background-color: #0099ff;
 }
